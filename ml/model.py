@@ -12,7 +12,7 @@ class ValuePredictModel:
 
     def __read_data(self):
         self.pd_data = pd.read_csv('data/apartmentComplexData.txt', delimiter=',')
-        self.__normalize_data()
+        # self.__normalize_data()
         self.pd_data.columns = [
             '1',
             '2',

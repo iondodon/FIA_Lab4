@@ -18,6 +18,6 @@ def predict():
 @app.errorhandler(werkzeug.exceptions.HTTPException)
 def handle_error(e):
     response = e.get_response()
-    response.data = json.dumps({"errMessage": "Error. Check data format!"})
+    response.data = json.dumps({"errMessage": "Error. Check test data format!"})
     response.content_type = "application/json"
     return response
